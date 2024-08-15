@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver Visualization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    </style>
+</head>
+<body>
+    <div class="title">Sudoku Solver Visualization</div>
+    <div id="placeholder" class="placeholder">Click "Start" to begin visualization.</div>
+    <div class="grid-container" id="grid-container">
+        <!-- Sudoku grid will be generated here -->
+    </div>
+    <div class="controls">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+    </div>
+
+    <script src = "{{ url_for('static', filename='main.js') }}">
+       
+    </script>
+</body>
+</html>
